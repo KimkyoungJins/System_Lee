@@ -7,13 +7,14 @@ typedef struct{
 	int age;
 } Person;
 
+
+
 void read_file(){
 	
 	int fd; 	// interger type return and 
-	ssize_t ret;	// signed inter type for system call return system
+	ssize_t ret;	// signed integer type for system call return system
 	char buffer[100];
 	Person p;
-
 
 	fd = open("person_info",  O_RDONLY);
 	
